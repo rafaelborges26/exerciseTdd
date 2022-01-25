@@ -1,4 +1,4 @@
-const assert = require("../core/assert/assert");
+const assert = require("../src/core/assert/assert");
 
 const http = require('http');
 
