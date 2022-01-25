@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node src/test/unit_test.test.js"
+    "server": "node src/server/server.js",
+    "test": "node src/test/unit_test.test.js",
+    "test:serve": "node src/test/server_http.test.js"
   },
   "keywords": [],
   "author": "",
