@@ -1,8 +1,23 @@
-const assert = require('../src/core/assert/assert.js')
+const { describe, it } = require('mocha')
+const assert = require('assert')
 const sqr = require('../src/core/sqr/sqr.js')
 const User = require('../src/core/user/user.js')
 
-
+describe('', () => {
+    it('Testing strings', () => {
+        assert('pessoa' === 'pessoa')
+    });
+    it('Testing sqr', () => {
+        assert(sqr(3) === 9)
+    });
+    it('Testing sqr', () => {
+        assert(sqr(5) === 25)
+    });
+    it('Testing double', () => {
+        assert(0.0 === 0.0);
+    });
+})
+ /*
 function main() {
     assert('pessoa' === 'pessoa', 'Testing strings')
 
@@ -19,3 +34,5 @@ function main() {
 }
 
 main()
+
+*/
