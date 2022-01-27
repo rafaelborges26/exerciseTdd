@@ -1,9 +1,8 @@
-function assert(value, description) {
-    console.log(description)
+function assert(value) {
     if(!value) {
-        console.log('error')
+        return false
     } else {
-        console.log("success")
+        return true
     }
 }
 

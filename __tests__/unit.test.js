@@ -1,8 +1,13 @@
-const { describe, it } = require('mocha')
 const assert = require('assert')
 const sqr = require('../src/core/sqr/sqr.js')
+const sum = require('../src/core/sum/sum.js')
 
 describe('Testing types and values', () => {
+    
+    it('Testing sum', () => {
+        expect(sum(1,2)).toBe(3)
+    });
+    
     it('Testing strings', () => {
         assert('pessoa' === 'pessoa')
     });

@@ -7,13 +7,19 @@
     "server": "node src/server/server.js",
     "test": "node test/unit_test.test.js",
     "test:serve": "node test/server_http.test.js",
-    "mocha": "./node_modules/mocha/bin/mocha test/"
-    
+    "mocha": "./node_modules/mocha/bin/mocha test/",
+    "jest": "jest --env=jsdom __tests__/",
+    "jest:watch": "jest --env=jsdom --watch __tests__/",
+    "jest:coverage": "jest --env=jsdom --coverage __tests__/",
+    "jest:memory": "jest --env=node --logHeapUsage __tests__/"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "mocha": "^9.2.0"
+  },
+  "devDependencies": {
+    "jest": "^27.4.7"
   }
 }
